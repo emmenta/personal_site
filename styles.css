@@ -582,7 +582,7 @@ body, html {
 }
 
 /* Responsive Styles */
-@media (max-width: 700px) {
+@media (min-width:500px) and (max-width: 700px) {
   .container {
     flex-direction: column;
   }
@@ -617,6 +617,149 @@ body, html {
   }
   .div1 h2{
     font-size: 1rem;
+  }
+  
+  .div1 p{
+    display: none;
+  }
+
+  .div1 .btn-links{
+    font-size: .9rem;
+  }
+
+  .div2 {
+  position: relative;
+  height: 73vh;
+  width: 100%;
+  margin: 0;
+  }
+
+  .column{
+    width:100%
+  }
+
+  .logos img{
+    width: 60%
+  }
+
+.skills li{
+    width: 100%
+  }
+
+  .containe {
+  padding: 10px 40px;
+  position: relative;
+  width: 90%;
+  }
+
+  .containe-left{
+  left: 10%;
+  }
+
+  .containe-right{
+    left: 10%;
+  }
+
+  .containe img {
+  position: absolute;
+  width: 40px;
+  left: -20px;
+  top: 32px;
+  z-index: 10;
+  }
+
+  .containe-right img{
+    left: -15px;
+  }
+  .containe-left img{
+    left: -15px;
+  }
+
+  .timeline::after{
+  content: "";
+  position: absolute;
+  width: 6px;
+  bottom: 0;
+  top: 0;
+  background: #002B5B;
+  left: 10%;
+  margin-left: -3px;
+  z-index: 1;
+  animation: moveline 6s linear forwards;
+  }
+
+  .left-containe-arrow{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 4;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #002B5B;
+  left: -28px;
+  }
+
+  .right-containe-arrow{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #002B5B;
+  left: -14px;
+  }
+
+  .certificate{
+  display: inline-block;
+  }
+  .cert-det{
+  width:100%;
+  }
+
+  .cert-img img{
+  width:20%;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .div1{
+  position: relative;
+  width: 100%;
+  height: 27vh;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  justify-content: center;
+  padding-right: 2rem;
+  text-align: right;
+  }
+
+  .div1 img {
+    position: absolute;
+    left: 4%;
+    top: 12%;
+    width: 18%;
+  }
+
+  .div1 h1, h2, .links{
+    width: 100%;
+  
+  }
+
+ .div1 h1{
+    font-size: 2rem;
+  }
+  .div1 h2{
+    font-size: 0.8rem;
   }
   
   .div1 p{
