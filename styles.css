@@ -780,6 +780,10 @@ body, html {
   .menu{
     padding: 0.8rem;
   }
+
+  .menu div {
+  margin-right: 1.2rem;
+}
   .column{
     width:100%
   }
