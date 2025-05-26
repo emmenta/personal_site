@@ -777,6 +777,9 @@ body, html {
   margin: 0;
   }
 
+  .menu{
+    padding: 0.8rem;
+  }
   .column{
     width:100%
   }
